@@ -12,7 +12,7 @@
     "serve:ssr": "node dist/server",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
     "build:client-and-server-bundles": "ng build --prod && ng run ssrWeb:server:production",
-    "now-build": "npm run build:ssr"
+    "now-build": "ng build --prod --output-path dist"
   },
   "private": true,
   "dependencies": {
